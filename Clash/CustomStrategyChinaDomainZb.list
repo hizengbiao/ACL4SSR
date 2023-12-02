@@ -1,0 +1,9 @@
+# 自定义直连列表
+
+# EXAMPLE
+# DOMAIN-SUFFIX,snapdrop.net
+# DOMAIN-KEYWORD,360buy
+
+
+# MyList
+DOMAIN-SUFFIX,aaabtest.com
