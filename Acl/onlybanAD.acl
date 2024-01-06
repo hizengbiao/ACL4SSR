@@ -39,7 +39,6 @@
 (^|\.)\w*adwords\w*\.\w*$
 (^|\.)\w*analysis\w*\.\w*$
 (^|\.)\w*applovin\w*\.\w*$
-(^|\.)\w*appsflyer\w*\.\w*$
 (^|\.)\w*domob\w*\.\w*$
 (^|\.)\w*duomeng\w*\.\w*$
 (^|\.)\w*dwtrack\w*\.\w*$
@@ -836,7 +835,6 @@
 (^|\.)appdriver\.cn$
 (^|\.)appjiagu\.com$
 (^|\.)applifier\.com$
-(^|\.)appsflyer\.com$
 (^|\.)atdmt\.com$
 (^|\.)baifendian\.com$
 (^|\.)banmamedia\.com$
