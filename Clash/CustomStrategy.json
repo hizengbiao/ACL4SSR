@@ -9,6 +9,7 @@ const myRules = [
 //GLOBAL
 'DOMAIN-KEYWORD,speedtest,GLOBAL',
 'DOMAIN-KEYWORD,bing,GLOBAL',
+'DOMAIN-KEYWORD,docker,GLOBAL',
 'DOMAIN-KEYWORD,adobe,GLOBAL',
 'DOMAIN-KEYWORD,apple,GLOBAL',
 'DOMAIN-KEYWORD,bard,GLOBAL',
@@ -36,6 +37,7 @@ const myRules = [
 'DOMAIN-KEYWORD,microsoft,GLOBAL',
 'DOMAIN-KEYWORD,claude,GLOBAL',
 'DOMAIN-KEYWORD,anthropic,GLOBAL',
+'DOMAIN-KEYWORD,nvidia,GLOBAL',
 // DIRECT
 'DOMAIN-SUFFIX,sub.id9.cc,DIRECT',
 'DOMAIN-KEYWORD,todesk,DIRECT',
@@ -89,6 +91,7 @@ const myRules = [
 'DOMAIN-KEYWORD,wenxiaobai,DIRECT',
 'DOMAIN-KEYWORD,alipay,DIRECT',
 'DOMAIN-KEYWORD,qq,DIRECT',
+'DOMAIN-KEYWORD,continue,DIRECT',
 //'DOMAIN-SUFFIX,delivery.mp.microsoft.com,GLOBAL',
 ]
 const extra = {
