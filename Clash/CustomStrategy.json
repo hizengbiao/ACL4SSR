@@ -6,6 +6,8 @@ module.exports.parse = async function({
 // 初始化四个代理数组
 
 const myRules = [
+//REJECT
+'DOMAIN-KEYWORD,adobe,REJECT',
 //GLOBAL
 'DOMAIN-KEYWORD,speedtest,GLOBAL',
 'DOMAIN-KEYWORD,bing,GLOBAL',
