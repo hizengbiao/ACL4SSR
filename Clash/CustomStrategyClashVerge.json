@@ -1,0 +1,116 @@
+// Define main function (script entry)
+
+// 程序入口
+function main(config, profileName) {
+  // 规则
+  let newrules = [
+    // 自定义规则
+    //走代理这里要求你的配置文件中包含跟配置文件名称相同的代理组
+    //大部分机场都会给,少部分没给的需要对着配置文件右键,创建代理组
+    //然后名称跟配置文件相同,自己选择些节点保存即可
+    // PROXY - 走代理
+    // `DOMAIN-SUFFIX,github.io,${profileName}`,
+    // `DOMAIN,v2rayse.com,${profileName}`,
+    // `DOMAIN-KEYWORD,baidu,${profileName}`,
+    //REJECT
+    'DOMAIN-SUFFIX,adobe.io,REJECT',
+    'DOMAIN-SUFFIX,adobestats.io,REJECT',
+
+    //GLOBAL
+    'DOMAIN-KEYWORD,speedtest,GLOBAL',
+    'DOMAIN-KEYWORD,tiktokcdn,GLOBAL',
+    'DOMAIN-KEYWORD,steam,GLOBAL',
+    'DOMAIN-KEYWORD,bing,GLOBAL',
+    'DOMAIN-KEYWORD,docker,GLOBAL',
+    'DOMAIN-KEYWORD,adobe,GLOBAL',
+    'DOMAIN-KEYWORD,apple,GLOBAL',
+    'DOMAIN-KEYWORD,bard,GLOBAL',
+    'DOMAIN-KEYWORD,protonvpn,GLOBAL',
+    'DOMAIN-KEYWORD,sanfen008,GLOBAL',
+    'DOMAIN-KEYWORD,poe,GLOBAL',
+    'DOMAIN-KEYWORD,github,GLOBAL',
+    'DOMAIN-KEYWORD,mmstat,GLOBAL',
+    'DOMAIN-KEYWORD,live.com,GLOBAL',
+    'DOMAIN-KEYWORD,gpt,GLOBAL',
+    'DOMAIN-KEYWORD,openai,GLOBAL',
+    'DOMAIN-KEYWORD,office,GLOBAL',
+    'DOMAIN-KEYWORD,onenote,GLOBAL',
+    'DOMAIN-KEYWORD,cloudflare,GLOBAL',
+    'DOMAIN-KEYWORD,yyets,GLOBAL',
+    'DOMAIN-KEYWORD,xyz,GLOBAL',
+    'DOMAIN-KEYWORD,outlook,GLOBAL',
+    'DOMAIN-KEYWORD,appsflyer,GLOBAL',
+    'DOMAIN-KEYWORD,doubleclick,GLOBAL',
+    'DOMAIN-KEYWORD,msftconnecttest,GLOBAL',
+    'DOMAIN-KEYWORD,pypi,GLOBAL',
+    'DOMAIN-KEYWORD,extstars,GLOBAL',
+    'DOMAIN-KEYWORD,flingtrainer,GLOBAL',
+    'DOMAIN-KEYWORD,stream,GLOBAL',
+    'DOMAIN-KEYWORD,microsoft,GLOBAL',
+    'DOMAIN-KEYWORD,claude,GLOBAL',
+    'DOMAIN-KEYWORD,anthropic,GLOBAL',
+    'DOMAIN-KEYWORD,nvidia,GLOBAL',
+    // DIRECT
+    'DOMAIN-SUFFIX,sub.id9.cc,DIRECT',
+    'DOMAIN-KEYWORD,inforbus,DIRECT',
+    'DOMAIN-KEYWORD,sdlfgc,DIRECT',
+    'DOMAIN-KEYWORD,todesk,DIRECT',
+    'DOMAIN-KEYWORD,douyin,DIRECT',
+    'DOMAIN-KEYWORD,ludashi,DIRECT',
+    'DOMAIN-KEYWORD,wpscdn,DIRECT',
+    'DOMAIN-KEYWORD,weixin,DIRECT',
+    'DOMAIN-KEYWORD,infinitynewtab,DIRECT',
+    'DOMAIN-KEYWORD,infinitytab,DIRECT',
+    'DOMAIN-KEYWORD,inftab,DIRECT',
+    'DOMAIN-KEYWORD,liblib,DIRECT',
+    'DOMAIN-KEYWORD,microvirt,DIRECT',
+    'DOMAIN-KEYWORD,cmbchina,DIRECT',
+    'DOMAIN-KEYWORD,qijishow,DIRECT',
+    'DOMAIN-KEYWORD,360qnw,DIRECT',
+    'DOMAIN-KEYWORD,sunlogin,DIRECT',
+    'DOMAIN-KEYWORD,xeton,DIRECT',
+    'DOMAIN-KEYWORD,oray,DIRECT',
+    'DOMAIN-KEYWORD,91toolbox,DIRECT',
+    'DOMAIN-KEYWORD,yuque,DIRECT',
+    'DOMAIN-KEYWORD,360tpcdn,DIRECT',
+    'DOMAIN-KEYWORD,bytefcdnrd,DIRECT',
+    'DOMAIN-KEYWORD,gitee,DIRECT',
+    'DOMAIN-KEYWORD,123pan,DIRECT',
+    'DOMAIN-KEYWORD,yunso,DIRECT',
+    'DOMAIN-KEYWORD,luckyair,DIRECT',
+    'DOMAIN-KEYWORD,hnair,DIRECT',
+    'DOMAIN-KEYWORD,zoominfo,DIRECT',
+    'DOMAIN-KEYWORD,hnair,DIRECT',
+    'DOMAIN-KEYWORD,ali,DIRECT',
+    'DOMAIN-KEYWORD,3dmgame,DIRECT',
+    'DOMAIN-KEYWORD,quark,DIRECT',
+    'DOMAIN-KEYWORD,esheep,DIRECT',
+    'DOMAIN-KEYWORD,haiyi,DIRECT',
+    'DOMAIN-KEYWORD,lintcode,DIRECT',
+    'DOMAIN-KEYWORD,qter,DIRECT',
+    'DOMAIN-KEYWORD,processon,DIRECT',
+    'DOMAIN-KEYWORD,cephalon,DIRECT',
+    'DOMAIN-KEYWORD,kuaishou,DIRECT',
+    'DOMAIN-KEYWORD,imgheybox,DIRECT',
+    'DOMAIN-KEYWORD,kskwai,DIRECT',
+    'DOMAIN-KEYWORD,ksapisrv,DIRECT',
+    'DOMAIN-KEYWORD,kgw,DIRECT',
+    'DOMAIN-KEYWORD,antpcdn,DIRECT',
+    'DOMAIN-KEYWORD,sealos,DIRECT',
+    'DOMAIN-KEYWORD,kwimgs,DIRECT',
+    'DOMAIN-KEYWORD,xiaoji,DIRECT',
+    'DOMAIN-KEYWORD,rc114,DIRECT',
+    'DOMAIN-KEYWORD,123957,DIRECT',
+    'DOMAIN-KEYWORD,deepseek,DIRECT',
+    'DOMAIN-KEYWORD,wenxiaobai,DIRECT',
+    'DOMAIN-KEYWORD,alipay,DIRECT',
+    'DOMAIN-KEYWORD,qq,DIRECT',
+    'DOMAIN-KEYWORD,continue,DIRECT',
+    //'DOMAIN-SUFFIX,delivery.mp.microsoft.com,GLOBAL',
+  ];
+  // 添加新规则到旧规则之前
+ config["rules"] = [...newrules,...config["rules"]];
+  
+  // 返回修改后的配置
+  return config;
+}
