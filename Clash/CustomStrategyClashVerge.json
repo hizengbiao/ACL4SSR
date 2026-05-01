@@ -17,7 +17,6 @@ let newrules = [
 'DOMAIN-SUFFIX,adobestats.io,REJECT',
 
 
-
 // 特定的节点
 //'DOMAIN-KEYWORD,bitget,🇯🇵 JP 千叶市',
 
@@ -59,8 +58,11 @@ let newrules = [
 'DOMAIN-KEYWORD,nvidia,GLOBAL',
 'DOMAIN-KEYWORD,linktr,GLOBAL',
 'DOMAIN-KEYWORD,huggingface,GLOBAL',
+
+
 // 'DOMAIN-KEYWORD,google,GLOBAL',
 // 'DOMAIN-KEYWORD,gemini,GLOBAL',
+// 'DOMAIN-KEYWORD,youtube,GLOBAL',
 
 // DIRECT
 'DOMAIN-KEYWORD,alicdn,DIRECT',
@@ -118,6 +120,12 @@ let newrules = [
 'DOMAIN-KEYWORD,alipay,DIRECT',
 'DOMAIN-KEYWORD,qq,DIRECT',
 'DOMAIN-KEYWORD,continue,DIRECT',
+'DOMAIN-KEYWORD,larkoffice,DIRECT',
+'DOMAIN-KEYWORD,wise,DIRECT',
+
+
+'IP-CIDR,192.243.117.28/32,DIRECT',
+
 //'DOMAIN-SUFFIX,delivery.mp.microsoft.com,GLOBAL',
 ];
 // 添加新规则到旧规则之前
